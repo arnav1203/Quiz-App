@@ -1,0 +1,90 @@
+body{
+    background: linear-gradient(-45deg, #b5593d, #c4336a, #227390, #2c977e);
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 99vh;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    /*color: rgb(253 202 137);
+    font-size: 40px;*/
+    margin: -6px; 
+    margin-top: -10px;
+    font: 700 55px "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  /* display: block; */
+	  /* margin: 0 auto; */
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+	  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+.box{
+    margin-top: -15px;
+    background-color: rgb(147, 175, 165);
+    padding: 10px;
+    padding-left: 20px;
+    width: 1400px;
+    height: 670px;
+    position: absolute;
+    left: 65px;
+    border-radius: 20px;
+    overflow-y: auto;
+    font-size: 19px;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    font-size: larger;
+    margin: 20px;
+    width:200px;
+    height: 45px;
+    border-radius: 20px;
+    background-color: #d44242;
+    color:beige;
+}
+.button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+.box::-webkit-scrollbar{
+    display:none;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
